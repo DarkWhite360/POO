@@ -43,45 +43,6 @@ CREATE TABLE Professor (
 drop table pessoa;
 INSERT INTO curso (nomeCurso) VALUES ('Análise e Desenvolvimento de Sistemas');
 
-
-
-INSERT INTO PESSOA (cpf, nome, idade, dataNascimento, telefone, email, estadoCivil, estado, cidade, endereco)
-VALUES (
-	'05021523970',
-    'Antonio',
-    25,
-    '2001-05-16',
-    '44999239704',
-    'antonio@gmail.com',
-    'Solteiro',
-    'Paraná',
-    'Maringá',
-    'Rua nhé'
-);
-INSERT INTO Aluno( ra, status, idcurso_fk, idpessoa_fk)
-VALUES (
-    '112442',
-    'Cursando',
-    1,
-    1
-);
-
-INSERT INTO PESSOA (cpf, nome, idade, dataNascimento, telefone, email, estadoCivil, estado, cidade, endereco)
-VALUES (
-	'0502',
-    'Ant',
-    2,
-    '2001-05-16',
-    '44999239704',
-    'ant@gmail.com',
-    'Casado',
-    'Paraná',
-    'Maringá',
-    'Rua nhé nhé'
-);
-
-INSERT INTO Professor (formacao, especializacao, valorHora, horasSemanais, idpessoa_fk) VALUES ('ADS', 'Esppecialista', 60, 50, 2);
-
 SELECT p.idPessoa, p.nome, p.cpf, p.idade, p.dataNascimento, p.telefone, p.email, p.estadoCivil, p.estado, p.cidade, p.endereco, a.ra, a.status, c.nomecurso, c.cdcurso
 FROM pessoa p
 INNER JOIN aluno a
