@@ -10,7 +10,7 @@ public class Conexao {
         try{
             String url ="jdbc:mysql://localhost:3306/sistemaAcademico";
             String user = "root";
-            String senha = "";
+            String senha = "@AntonioWhite360";
 
             return DriverManager.getConnection(url, user, senha);
         }catch (SQLException e){

@@ -33,23 +33,6 @@ abstract public class Pessoa {
     }
 
     abstract String listarPessoa();
-  /*
-    public void listarPessoa(){
-        System.out.println("CPF: " +this.cpf);
-        System.out.println("Nome: " +this.nome);
-        System.out.println("Idade: " +this.idade);
-        System.out.println("Data de Nascimento: " +this.dataNascimento);
-        System.out.println("Telefone: " +this.telefone);
-        System.out.println("Email: " +this.email);
-        System.out.println("Estado Civil: " +this.estadoCivil);
-        System.out.println("Unidade Federativa: " +this.estado);
-        System.out.println("Cidade: " +this.cidade);
-        System.out.println("Endereco: " +this.endereco);
-
-    }
-   */
-//Setters
-
 
     public void setId(int id) {
         this.id = id;

@@ -2,9 +2,7 @@ package Controller;
 
 import dao.AlunoDAO;
 import models.Aluno;
-import models.Pessoa;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class AlunoController {

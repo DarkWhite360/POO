@@ -20,4 +20,5 @@ public class ProfessorController {
     public List<Professor> listarProfessores(){
         return controllerProfessor.listarProfessores();
     }
+
 }
